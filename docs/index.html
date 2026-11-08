@@ -103,6 +103,10 @@ article:hover .thumb img{transform:scale(1.04)}
 .empty{color:var(--muted)}
 .prose{background:var(--paper);border-radius:16px;padding:30px;box-shadow:var(--shadow);max-width:760px}
 .offer{padding-left:1.1em}.offer li{margin:8px 0}
+#ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;background:var(--ink);color:var(--paper);border-radius:14px;padding:14px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:.9rem;max-width:720px;margin:0 auto}
+#ck[hidden]{display:none}#ck p{margin:0;flex:1 1 300px}#ck a{color:inherit}
+#ck button{background:var(--paper);color:var(--ink);border:0;border-radius:999px;padding:9px 16px;font-weight:600;cursor:pointer}#ck button.ghost{background:transparent;color:var(--paper);border:1px solid rgba(255,255,255,.4)}
+.legal{font-size:.8rem}.prose h2{margin-top:1.6em}.prose ul li{margin:.3em 0}
 .btn{display:inline-block;background:var(--ink);color:var(--paper);padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:600}
 
 /* Rodapé */
@@ -122,4 +126,8 @@ footer a{color:#efe8d8}
 <footer><div class="wrap"><a class="logo" href="index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M4,36V14H7V17H10V14H13V36ZM27,36V14H30V17H33V14H36V36ZM13,36V20H27V36ZM14,30V4H17V7H20V4H23V7H26V4V30Z"/><path class="door" d="M17.5,36V31a2.5,2.5 0 0 1 5,0V36Z"/></svg><span class="word">GMR<span>360</span></span></a>
 <span class="motto">Aqui nasceu Portugal</span>
 <span>As notícias são escritas a partir das publicações públicas das juntas de freguesia, clubes, partidos e instituições de Guimarães, sempre com link para o original. Encontrou um erro? Diga-nos para corrigirmos.</span>
-<span><a href="https://www.facebook.com/profile.php?id=61596060853030" rel="noopener" target="_blank">Siga-nos no Facebook</a> · <a href="anuncie.html">Anuncie no GMR360</a> · <a href="feed.xml">RSS</a></span></div></footer></body></html>
+<span><a href="https://www.facebook.com/profile.php?id=61596060853030" rel="noopener" target="_blank">Siga-nos no Facebook</a> · <a href="anuncie.html">Anuncie no GMR360</a> · <a href="feed.xml">RSS</a></span>
+<span class="legal"><a href="sobre.html">Sobre o GMR360</a> · <a href="privacidade.html">Privacidade e cookies</a> · <a href="contacto.html">Contacto</a></span></div></footer><div id="ck" hidden><p>Este site usa cookies para medir visitas e, quando houver, mostrar publicidade da Google. <a href="privacidade.html">Saber mais</a></p><button id="ck-ok">Aceitar</button><button id="ck-no" class="ghost">Só o essencial</button></div>
+<script>(function(){try{var k="gmr360-ck",v=localStorage.getItem(k);var b=document.getElementById("ck");if(!v){b.hidden=false}
+function set(x){try{localStorage.setItem(k,x)}catch(e){}b.hidden=true}
+document.getElementById("ck-ok").onclick=function(){set("ok")};document.getElementById("ck-no").onclick=function(){set("no")}}catch(e){}})();</script></body></html>
