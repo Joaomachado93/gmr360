@@ -22,7 +22,9 @@ a{color:inherit}.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
 .topbar{position:relative;display:flex;justify-content:space-between;gap:12px;padding:10px 18px;font-size:.76rem;letter-spacing:.04em;color:#c9c1b1;border-bottom:1px solid rgba(255,255,255,.08)}
 .topbar b{color:var(--gold-2);font-weight:600}
 @media (max-width:560px){.topbar span:last-child{display:none}}
-.brand{position:relative;text-align:center;padding:34px 18px 150px}
+/* Em ecrãs largos o castelo cresce com a largura (o SVG escala); o espaço por baixo do texto cresce com ele
+   para o castelo nunca ficar por cima do subtítulo (o 11.2vw é a altura do castelo a essas larguras). */
+.brand{position:relative;text-align:center;padding:34px 18px max(172px,calc(11.2vw + 40px))}
 .logo{display:inline-flex;align-items:center;gap:14px;text-decoration:none;color:#fbf7ee}
 .mark{width:46px;height:46px;fill:var(--gold-2)}.mark .door{fill:#1d1b18}
 .word{font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:clamp(2.6rem,8vw,4.4rem);line-height:1;letter-spacing:-.035em}
@@ -30,7 +32,7 @@ a{color:inherit}.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
 .motto{display:block;margin-top:14px;font-family:"Cinzel",Georgia,serif;font-weight:700;letter-spacing:.32em;font-size:clamp(.72rem,2.2vw,.95rem);color:var(--gold-2)}
 .motto::before,.motto::after{content:"";display:inline-block;width:34px;height:1px;background:currentColor;vertical-align:middle;margin:0 12px;opacity:.6}
 .sub-motto{display:block;margin-top:6px;font-family:"Fraunces",Georgia,serif;font-style:italic;color:#d9d1c1;font-size:1.02rem}
-.skyline{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:160px}
+.skyline{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:max(160px,13.34vw)}
 .skyline .far{fill:#2c2925}.skyline .near{fill:var(--bg)}
 
 /* Navegação */
