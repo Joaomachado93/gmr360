@@ -103,6 +103,10 @@ article:hover .thumb img{transform:scale(1.04)}
 .house::after{content:"";position:absolute;right:-30px;bottom:-30px;width:160px;height:160px;border:1px solid rgba(216,184,106,.25);border-radius:50%}
 
 .empty{color:var(--muted)}
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 18px;margin:30px 0 0;font-size:.9rem;color:var(--muted)}
+.pager a{text-decoration:none;font-weight:600;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.pager a:hover{border-color:var(--gold);color:var(--gold)}
+.pager.loading a.next{opacity:.5;pointer-events:none}.pager.loading a.next::after{content:" …"}
 .prose{background:var(--paper);border-radius:16px;padding:30px;box-shadow:var(--shadow);max-width:760px}
 .offer{padding-left:1.1em}.offer li{margin:8px 0}
 #ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;background:var(--ink);color:var(--paper);border-radius:14px;padding:14px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:.9rem;max-width:720px;margin:0 auto}
@@ -133,7 +137,7 @@ footer a{color:#efe8d8}
 <h2>Publicidade</h2>
 <p>O GMR360 é gratuito e sustenta-se com publicidade: anúncios de negócios locais (<a href="anuncie.html">saiba como anunciar</a>) e anúncios servidos pela Google. A publicidade está sempre identificada como tal e não influencia as notícias.</p>
 <h2>Ficha</h2>
-<ul><li><b>Projeto:</b> GMR360, Guimarães</li><li><b>Edição:</b> João Machado</li><li><b>Notícias publicadas:</b> 268 de 26 freguesias e várias instituições</li></ul></div></main>
+<ul><li><b>Projeto:</b> GMR360, Guimarães</li><li><b>Edição:</b> João Machado</li><li><b>Notícias publicadas:</b> 269 de 26 freguesias e várias instituições</li></ul></div></main>
 <footer><div class="wrap"><a class="logo" href="index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M4,36V14H7V17H10V14H13V36ZM27,36V14H30V17H33V14H36V36ZM13,36V20H27V36ZM14,30V4H17V7H20V4H23V7H26V4V30Z"/><path class="door" d="M17.5,36V31a2.5,2.5 0 0 1 5,0V36Z"/></svg><span class="word">GMR<span>360</span></span></a>
 <span class="motto">Aqui nasceu Portugal</span>
 <span>As notícias são escritas a partir das publicações públicas das juntas de freguesia, clubes, partidos e instituições de Guimarães, sempre com link para o original. Encontrou um erro? Diga-nos para corrigirmos.</span>
