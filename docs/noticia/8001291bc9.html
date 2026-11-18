@@ -147,6 +147,8 @@ footer a{color:#efe8d8}
 .side .classif .tm{display:flex;min-width:0}.side .classif .tm>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 @media (min-width:1100px){.with-aside{grid-template-columns:minmax(0,1fr) 340px;gap:28px}.with-aside .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .classif{background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+details.classif>summary{list-style:none;cursor:pointer;display:block}details.classif>summary::-webkit-details-marker{display:none}
+details.classif:not([open]) header{border-radius:0}details.classif>summary header h2::after{content:" ▾";font-size:.7em;color:var(--gold)}details.classif[open]>summary header h2::after{content:" ▴"}
 .classif header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;padding:18px 20px 14px;background:linear-gradient(135deg,#1b1b1b,#2c2a25);color:#f4efe4}
 .classif .kick{margin:0 0 2px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
 .classif h2{margin:0;font-family:"Fraunces",serif;font-size:1.25rem;line-height:1.2;color:#fff}
