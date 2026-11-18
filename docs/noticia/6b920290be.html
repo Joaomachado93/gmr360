@@ -138,7 +138,7 @@ footer a{color:#efe8d8}
 .with-aside{display:flex;flex-direction:column-reverse;gap:0}
 .classif .x{display:none}
 @media (min-width:760px){.with-aside{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}
-.with-aside .side{position:sticky;top:76px;max-height:calc(100vh - 92px);overflow-y:auto;scrollbar-width:thin}
+
 .with-aside .grid{grid-template-columns:minmax(0,1fr)}.with-aside .lead{grid-template-columns:minmax(0,1fr)}
 .classif header{padding:14px 16px 12px}.classif h2{font-size:1.05rem}.classif td{padding:6px 4px}.classif th{padding:8px 4px}}
 .side .classif table{table-layout:fixed}.side .classif th:first-child,.side .classif td:first-child{width:40px;padding-left:12px}
@@ -165,6 +165,10 @@ footer a{color:#efe8d8}
 .classif .pts{display:inline-block;min-width:30px;font-weight:800}
 .classif tr.me td{background:color-mix(in srgb,var(--gold) 20%,transparent);font-weight:700}
 .classif tr.me td:first-child{box-shadow:inset 4px 0 0 var(--gold)}
+.classif tr.far{display:none}.classif:has(details.full[open]) tr.far{display:table-row}.classif tr.aftergap td{border-top:2px dashed var(--line)}.classif:has(details.full[open]) tr.aftergap td{border-top:0}
+.classif details.full{margin:0;padding:0;border:0;background:none;box-shadow:none}.classif details.full summary{display:block;margin:0;list-style:none;cursor:pointer;padding:11px 16px;text-align:center;font-weight:700;font-size:.82rem;color:var(--gold);border-top:1px solid var(--line)}
+.classif details.full summary::-webkit-details-marker{display:none}.classif details.full summary:hover{background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.classif details.full .c,.classif details.full[open] .o{display:none}.classif details.full[open] .c{display:inline}
 .classif footer{all:unset;display:block;padding:10px 20px 14px;font-size:.74rem;color:var(--muted);border-top:1px solid var(--line);background:transparent}.classif footer a{color:inherit}
 @media (max-width:560px){.classif td,.classif th{padding-left:4px;padding-right:4px}.classif header{padding:16px}}.pickers{display:flex;flex-wrap:wrap;gap:0 12px}.pickers .fregs{margin-bottom:14px}.pickers+*{margin-top:12px}
 .fregs summary{list-style:none;display:inline-flex;align-items:center;gap:10px;cursor:pointer;padding:10px 18px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-weight:600;font-size:.92rem;box-shadow:var(--shadow)}
